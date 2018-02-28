@@ -1,0 +1,378 @@
+
+/* 
+Shaun Inman's CSS Reset
+https://perishablepress.com/press/2007/10/23/a-killer-collection-of-global-css-reset-styles/
+CSSresetr
+*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, 
+form, fieldset, input, p, blockquote, table, th, td, embed, object {
+	padding: 0;
+	margin: 0; 
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+fieldset, img, abbr {
+	border: 0;
+	}
+address, caption, cite, code, dfn, em, 
+h1, h2, h3, h4, h5, h6, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
+	}
+ul {
+    list-style: none;
+    text-align:center;
+	}
+caption, th {
+	text-align: left;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.0em;
+	}
+q:before, q:after {
+	content: '';
+	}
+a, ins {
+	text-decoration: none;
+	}
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+
+/*==== Global styles====*/
+* { 
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: rgb(230, 230, 235);
+}
+.container{
+      display: flex;
+      flex-direction: column;  
+      background-color: rgb(230, 230, 235);
+      justify-content: center;
+      
+  }
+/*==== Styles for navbar ==== */
+
+
+.main-nav{   
+    flex-direction: column;
+    overflow: hidden;
+    width: 95%;
+    margin: auto;
+    background-color:white;
+   
+/* .nav{
+        width: 95vw;    */
+    }  
+.nav{
+    background-color:rgb(230, 230, 235);
+    /*text-align: center;*/
+    list-style-type: none;
+    margin-top: 0px;
+    min-height: 30px;
+    line-height: 5vh;
+    /*width: 100vw;*/
+    flex-direction: column;
+    
+}
+.brand{
+    font-family: 'Noticia Text', serif;
+    background-color: white;
+    line-height: 3em;
+    text-align: center;
+   margin:0;
+    
+} 
+
+a{
+   text-decoration: none; 
+ color:rgb(36, 131, 147);
+   background-color: white;
+}
+a:hover{
+    color:rgb(154, 175, 171);
+}
+img{
+    background-color: rgb(230, 230, 235);
+    padding: 3vh;
+    width: 90vw;
+    margin: 0 auto;
+    display: block;
+    
+}
+p{
+    padding: 1em;
+    text-align: center; 
+    margin:0 auto;
+    background-color: rgb(230, 230, 235);
+      
+}
+.heading{
+    text-align: center;
+    background-color: rgb(230, 230, 235);
+    margin: 0 auto;
+    
+    padding:2em;
+}
+
+.skills {
+    text-align: center;
+    padding:1em;
+    background-color:rgb(154, 175, 171);
+}
+
+
+li{
+    text-align: center;
+    padding-top: 2em;
+    border-bottom: 2px solid rgb(230, 230, 235);
+    background-color:white;
+    margin-left:.5em;
+    margin-right:.5em;
+    }
+   
+    h1{
+        border-bottom: 2px solid rgb(230, 230, 235);
+    }
+    
+    h3, h4{
+    
+     border-bottom: 2px solid  rgb(230, 230, 235);
+     text-align: center;
+    }
+    .footer-container{
+        background-color: rgb(230, 230, 235);
+    }
+    .footer-container h3{
+        background-color:white;
+       padding:1em;
+    }
+ /*============================  
+    ====  MEDIA QUERIES ====*
+ ==============================
+  
+  =============================
+      ==== TABLET ====
+===============================*/
+
+@media only screen and (min-width: 768px){
+ 
+ /* ==== styles for top navigation  ======*/
+ 
+ 
+.container{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 95vw;
+    background-color: rgb(230, 230, 235);
+    justify-content: center;
+ } 
+
+ .main-nav{
+    width: 90%;
+    margin: 0 auto;
+    
+
+}
+
+.main-nav .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 230, 235);
+
+}
+.main-nav  {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(230, 230, 235);
+
+    justify-content: center;
+}       
+li{ 
+   
+padding-right: 2em;
+display:inline-block;
+background-color: rgb(230, 230, 235);
+padding-top: 0;
+}
+
+.brand{
+background-color: rgb(230, 230, 235);
+text-align: left;
+
+}
+/*=====  end of top navigation  ====*/
+
+
+.container p{
+    padding: 2em;
+}
+.container h3{
+    text-align: center;
+}
+ 
+img{
+    width: 45%;
+}
+     
+
+    
+
+
+h1, h3{
+border-bottom: transparent;
+background-color:rgb(230, 230, 235);
+}
+
+h4{
+    border-bottom: transparent;
+    background-color:rgb(230, 230, 235);
+    width: 100vw;
+}
+p{
+
+
+    background-color: rgb(230, 230, 235);
+    /*margin:0 auto;  */
+    padding: 1em;
+        /* width:45%; */
+    flex-wrap: wrap;
+}
+a{
+    background-color:rgb(230, 230, 235);
+}
+
+/* ===== styles for experience =====*/
+
+.skills{
+    width:75vw;
+    border: 2px solid rgb(36, 131, 147);
+    margin: 0 auto;
+    margin-top: 2em;
+    
+}
+
+
+
+/*=====styles for bottom navigation ===*/
+.contain-examples{
+    min-width: 768px;
+    background-color: rgb(230, 230, 235);
+    flex-flow: row wrap;
+    margin: 2px auto 0 auto;
+    display: flex;
+}
+.box-style{
+    flex:1;
+    min-width:40vw;
+    text-align: center;
+
+}
+.footer-container{
+    display:flex;
+    background-color: rgb(230, 230, 235);
+    
+}
+.column1 li{
+flex:1;
+display: inline-block;
+margin-left: 3vw;
+padding: 0 0 5vw 0;
+}
+.column1 h3{
+    background-color: rgb(230, 230, 235);  
+}
+.column2 ul {
+    flex:1;    
+    margin-left: 20vw;
+    margin-top:1em;
+}
+.nav-brand{
+    padding-left: 3vw;
+}
+
+/*========End Tablet Styles==================*/
+
+
+}
+    /*=============================
+        ==== DESKTOP ====
+    ===============================*/
+@media only screen and (min-width: 1024px){
+
+
+/* ==== style for site boxes=====*/
+.box-style{
+    flex:1;
+    min-width:30vw;
+    text-align: center;
+
+}   
+
+/*  ======== styles for top navigation====*/
+.container{
+    display:flex;
+    background-color: rgb(230, 230, 235);
+    width:87vw;
+    
+}
+h3{
+    padding-top:2em;
+   
+    
+    padding-left:2em;
+    
+}
+.brand{
+    display: inline-flex;
+    text-align: left;
+    padding-left:2em;
+    font-weight:300;
+    
+}
+
+
+.main-nav{
+    justify-content: flex-start;
+}
+.main-nav li{
+        
+    
+    flex: 1;
+    display: inline-block;
+    margin-left: 3vw;
+    
+    padding: 0 0 1vw 0;
+    width: 10vw;
+    
+}
+
+.nav{
+background-color: rgb(230, 230, 235); 
+line-height:0vh;
+}
+.nav ul{
+    flex:1;    
+    margin-left: 38vw;  
+    
+}
+
+
+/*====   style bottom navigation =========*/
+.column2 ul{
+    margin-left: 38vw;
+}
+/*================  End styles for Desktop============*/      
+} 
+    
+
+
