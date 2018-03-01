@@ -87,13 +87,13 @@ body{
     background-color: white;
     line-height: 3em;
     text-align: center;
-   margin:0;
+    margin:0;
     
 } 
 
 a{
    text-decoration: none; 
- color:rgb(36, 131, 147);
+   color:rgb(36, 131, 147);
    background-color: white;
 }
 a:hover{
@@ -147,12 +147,32 @@ li{
      border-bottom: 2px solid  rgb(230, 230, 235);
      text-align: center;
     }
+
+    /*======== styles for bottom nav =========>*/
+
     .footer-container{
         background-color: rgb(230, 230, 235);
+    
     }
+    #top{
+     float:right;
+     margin-left:7em;
+    padding-bottom:2em; 
+    background-color: rgb(230, 230, 235);
+    }
+    
     .footer-container h3{
-        background-color:white;
-       padding:1em;
+       
+        padding-top: 1em;
+       padding-left:.5em;
+        padding-bottom:2em;
+       float:left;
+    }
+    .column2{
+        display:none;
+    }
+    .column1 a{
+        background-color: rgb(230, 230, 235);
     }
  /*============================  
     ====  MEDIA QUERIES ====*
@@ -186,7 +206,7 @@ li{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+   
     background-color: rgb(230, 230, 235);
 
 }
@@ -298,6 +318,13 @@ padding: 0 0 5vw 0;
 }
 .nav-brand{
     padding-left: 3vw;
+}
+
+#top {
+    display: none;
+}
+.column2 {
+    display: unset;
 }
 
 /*========End Tablet Styles==================*/
